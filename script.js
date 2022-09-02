@@ -1,9 +1,28 @@
 "use strict";
 
 
-console.log(2 + 2 * 2 != '6');
+const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?");
 
-const isChecked = true;
-const isClose = false;
+console.log(numberOfFilms);
 
-console.log(isChecked && !isClose);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+
+
+};
+
+console.log(personalMovieDB);
+
+const a = prompt('Один из последних просмотренных фильмов?');
+const b = prompt('На сколько вы оцените его?');
+const c = prompt('Один из последних просмотренных фильмов?');
+const d = prompt('На сколько вы оцените его?');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
